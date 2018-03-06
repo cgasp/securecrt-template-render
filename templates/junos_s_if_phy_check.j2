@@ -1,0 +1,3 @@
+{ "prompt" : ">" }
+show confi interface {{ interface }} | match desc
+show interfaces diag optics {{ interface }} | match "dBm|Physical interface" | except "alarm|threshold"
